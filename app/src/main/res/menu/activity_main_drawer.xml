@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/nav_menu_home" />
+        <item
+            android:id="@+id/nav_menu_timeline"
+            android:icon="@drawable/ic_menu_timeline"
+            android:title="@string/nav_menu_timeline" />
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_add"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/nav_menu_add" />
+        <item
+            android:id="@+id/nav_menu_mileagelog"
+            android:icon="@drawable/ic_menu_log"
+            android:title="@string/nav_menu_mileagelog" />
+        <item
+            android:id="@+id/nav_menu_statistics"
+            android:icon="@drawable/ic_menu_statistics"
+            android:title="@string/nav_menu_statistics" />
+        <item
+            android:id="@+id/nav_menu_chart"
+            android:icon="@drawable/ic_menu_chart"
+            android:title="@string/nav_menu_chart" />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_cost_reminder"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/nav_menu_cost_reminder" />
+        <item
+            android:id="@+id/nav_menu_costlog"
+            android:icon="@drawable/ic_menu_log"
+            android:title="@string/nav_menu_costlog" />
+        <item
+            android:id="@+id/nav_menu_coststatistics"
+            android:icon="@drawable/ic_menu_statistics"
+            android:title="@string/nav_menu_coststatistics" />
+        <item
+            android:id="@+id/nav_menu_costchart"
+            android:icon="@drawable/ic_menu_chart"
+            android:title="@string/nav_menu_costchart" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_vehiles"
+            android:icon="@drawable/ic_menu_vehiles"
+            android:title="@string/nav_menu_vehiles" />
+        <item
+            android:id="@+id/nav_menu_setting"
+            android:icon="@drawable/ic_menu_setting"
+            android:title="@string/nav_menu_setting" />
+    </group>
+
+</menu>

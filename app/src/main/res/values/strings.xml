@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FuelRecord</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_menu_home">首页</string>
+    <string name="nav_menu_timeline">时间轴</string>
+    <string name="nav_menu_add">添加</string>
+    <string name="nav_menu_mileagelog">里程日志</string>
+    <string name="nav_menu_statistics">统计信息</string>
+    <string name="nav_menu_chart">图表</string>
+    <string name="nav_menu_cost_reminder">花费/提醒</string>
+    <string name="nav_menu_costlog">费用记录</string>
+    <string name="nav_menu_coststatistics">费用统计</string>
+    <string name="nav_menu_costchart">费用图表</string>
+    <string name="nav_menu_vehiles">车辆</string>
+    <string name="nav_menu_setting">设置</string>
+</resources>
