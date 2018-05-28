@@ -18,7 +18,7 @@ object AttachmentTable {
                 this.ID to INTEGER + PRIMARY_KEY + UNIQUE,
                 this.Source to TEXT,
                 this.Type to TEXT,
-                this.IsActive to INTEGER
+                this.IsActive to INTEGER + DEFAULT("0") + NOT_NULL
         );
     }
     fun dropTable(db: SQLiteDatabase) {

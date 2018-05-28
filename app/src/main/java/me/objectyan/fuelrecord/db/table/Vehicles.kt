@@ -14,7 +14,7 @@ object VehiclesTable {
     var FuelUnit = "FuelUnit"
     var Comsumption = "Comsumption"
     var GASType = "GASType"
-    var GASTypeOther = "GASType"
+    var GASTypeOther = "GASTypeOther"
     var Make = "Make"
     var Model = "Model"
     var Year = "Year"
@@ -42,7 +42,7 @@ object VehiclesTable {
                 this.LicensePlate to TEXT,
                 this.VIN to TEXT,
                 this.InsurancePolicy to TEXT,
-                this.IsActive to INTEGER
+                this.IsActive to INTEGER + DEFAULT("1") + NOT_NULL
         );
     }
     fun dropTable(db: SQLiteDatabase) {

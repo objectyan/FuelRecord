@@ -1,12 +1,8 @@
 <resources>
-    <string name="app_name">FuelRecord</string>
+    <string name="app_name">Fuel Record</string>
     <string name="db_version">1</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <string name="nav_menu_home">首页</string>
     <string name="nav_menu_timeline">时间轴</string>
     <string name="nav_menu_add">添加</string>
@@ -19,4 +15,6 @@
     <string name="nav_menu_costchart">费用图表</string>
     <string name="nav_menu_vehiles">车辆</string>
     <string name="nav_menu_setting">设置</string>
+    <string name="home_main_tab_overview">概述</string>
+    <string name="home_main_tab_calculator">计算器</string>
 </resources>
