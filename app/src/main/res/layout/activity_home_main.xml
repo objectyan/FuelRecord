@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <android.support.design.widget.TabLayout
-        android:id="@+id/toolbar_tab"
+        android:id="@+id/home_tab"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="bottom"
@@ -26,4 +26,9 @@
             android:layout_height="match_parent"
             android:text="@string/home_main_tab_calculator" />
     </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

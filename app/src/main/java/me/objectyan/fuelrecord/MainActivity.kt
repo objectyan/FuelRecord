@@ -1,6 +1,5 @@
 package me.objectyan.fuelrecord
 
-import android.app.Fragment
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -30,6 +29,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fab.setOnClickListener { view ->
 
         }
+
+        supportFragmentManager
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar,R.string.nav_open,R.string.nav_close)
