@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import me.objectyan.fuelrecord.R
 import me.objectyan.fuelrecord.R.*
 import android.support.v4.view.ViewPager
+import android.util.Log
 import android.widget.TableLayout
 import me.objectyan.fuelrecord.adapter.HomeTabPagerAdapter
 
@@ -16,6 +17,7 @@ import me.objectyan.fuelrecord.adapter.HomeTabPagerAdapter
 class MainFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        Log.i("onCreateView","onCreateView")
         return inflater.inflate(
                 layout.activity_home_main,
                 container,
@@ -24,12 +26,14 @@ class MainFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        Log.i("onViewCreated","onViewCreated")
         super.onViewCreated(view, savedInstanceState)
         var tab = view.findViewById<TabLayout>(R.id.home_tab)
         val pager = view.findViewById<ViewPager>(R.id.home_viewpager)
         val fragmentList = listOf<Fragment>(OverviewFragment(), CalculatorFragment())
         pager.run {
-            adapter = HomeTabPagerAdapter(fragmentManager, fragmentList)
+            // 因Tab是嵌入在Fragment里面的，所以需使用childFragmentManager而非fragmentManager
+            adapter = HomeTabPagerAdapter(childFragmentManager, fragmentList)
             addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
                 override fun onPageScrollStateChanged(state: Int) {
 

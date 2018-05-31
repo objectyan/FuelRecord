@@ -9,14 +9,6 @@ import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
-import android.content.Intent
-import android.support.constraint.Placeholder
-import android.support.design.widget.Snackbar
-import android.support.v4.view.MenuItemCompat
-import android.support.v4.widget.DrawerLayout
-import android.util.Log
-import kotlinx.android.synthetic.main.content_main.*
-import me.objectyan.fuelrecord.page.home.MainFragment
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -74,7 +66,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_menu_home -> {
                 setTitle(R.string.app_name)
-                val fragment = MainFragment()
+                val fragment = me.objectyan.fuelrecord.page.home.MainFragment()
+                val fragmentTransaction = supportFragmentManager.beginTransaction()
+                fragmentTransaction.replace(R.id.content_frame, fragment)
+                fragmentTransaction.commit()
+            }
+            R.id.nav_menu_timeline -> {
+                val fragment = me.objectyan.fuelrecord.page.timeline.MainFragment()
                 val fragmentTransaction = supportFragmentManager.beginTransaction()
                 fragmentTransaction.replace(R.id.content_frame, fragment)
                 fragmentTransaction.commit()

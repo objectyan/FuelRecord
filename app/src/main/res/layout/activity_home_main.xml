@@ -17,14 +17,6 @@
         app:tabIndicatorHeight="2.0dp"
         app:tabSelectedTextColor="@color/colorWhile"
         app:tabTextColor="#ced0d3">
-        <android.support.design.widget.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/home_main_tab_overview" />
-        <android.support.design.widget.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/home_main_tab_calculator" />
     </android.support.design.widget.TabLayout>
 
     <android.support.v4.view.ViewPager

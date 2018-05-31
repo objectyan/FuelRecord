@@ -7,4 +7,11 @@
     <dimen name="nav_header_height">80dp</dimen>
     <dimen name="nav_header_text_size">40dp</dimen>
     <dimen name="fab_margin">20dp</dimen>
+    <dimen name="card_view_margin">10dp</dimen>
+    <dimen name="card_view_padding">8dp</dimen>
+    <dimen name="card_view_elevation">5dp</dimen>
+    <dimen name="card_view_title_text_size">20dp</dimen>
+    <dimen name="card_view_title_text_weight">900</dimen>
+    <dimen name="avatar_bounds">96dp</dimen>
+    <dimen name="avatar_border">12dp</dimen>
 </resources>
